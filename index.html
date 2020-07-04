@@ -1,0 +1,23 @@
+
+<html  ng-app="CounterApp">
+    <head>
+      <script src="angular.min.js"></script>
+      <script src="app.js"></script>
+      <style> body { font-size: 1.3em; }</style>
+      <title>Dependency Injection in Java Scripts(Angular JS). </title>
+    </head>
+    <body  >
+      <h1>Dependency Injection in Java Scripts(Angular JS).</h1>
+      <div ng-controller ="CounterController">
+        <button ng-click="showNumberOfWatchers()">log wacher </button>
+        <div>
+          <button ng-click="countOnce()">Uo onces</button>
+          <button ng-click="upCounter()">Increments </button>
+        </div>
+    <div>
+      once counter : {{ onceCounter }}<br>
+      Counter : {{ counter }}
+    </div>
+    </div>
+      </body>
+  </html>
